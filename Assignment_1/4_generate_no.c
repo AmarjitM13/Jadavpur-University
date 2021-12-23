@@ -1,15 +1,14 @@
 #include <stdio.h>
 #include <math.h>
-int length(int);
-int reverse(int);
-int reverse(int n){
-    int last_dig,rev=0;
+
+int getDigit(int n){
+    int last_dig,digit=0;
     while(n!=0){
         last_dig=n%10;
-        rev=rev*10+last_dig;
+        digit=digit*10+last_dig;
         n=n/10;
     }
-    return rev;
+    return digit;
 }
 int length(int num){
     int count=0,last_digit;
@@ -28,9 +27,9 @@ int main(){
     printf("Enter second number: ");
     scanf("%d",&y);
     len_x=length(x);
-    rev_x=reverse(x);
+    rev_x=getDigit(x);
     len_y=length(y);
-    rev_y=reverse(y);
+    rev_y=getDigit(y);
     for(i=0;i<len_x;i++){
         if(i%2==0){
             ld=rev_x % 10;
@@ -53,7 +52,7 @@ int main(){
         rev_y=rev_y/10;
     }
     z=(int)z;
-    printf("\nThe new integer is %d",reverse(z));
+    printf("\nThe new integer is %d",getDigit(z));
     
 
     return 0;
