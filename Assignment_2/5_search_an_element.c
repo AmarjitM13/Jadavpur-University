@@ -21,7 +21,9 @@ int main(void) {
     int arr[] = {1,3,5,6,7,8,9};
  
     /* Suppose we have to find 10 .*/
-    int num = 10;
+    int num = 0;
+    printf("enter the value");
+    scanf("%d", &num);
     int size = sizeof(arr)/sizeof(arr[0]);
  
     int pos;
