@@ -1,6 +1,3 @@
-// C program to sort the array in an
-// ascending order using sort
-
 #include <stdio.h>
 
 void swap(int* x, int* y)
@@ -10,7 +7,6 @@ void swap(int* x, int* y)
 	*y = temp;
 }
 
-// Function to perform Sorting
 void sort(int arr[], int n)
 {
 	int i, j, min_idx;
@@ -30,7 +26,6 @@ void sort(int arr[], int n)
 	}
 }
 
-// Function to print an array
 void printArray(int arr[], int size)
 {
 	int i;
@@ -39,7 +34,6 @@ void printArray(int arr[], int size)
 	printf("\n");
 }
 
-// Driver code
 int main()
 {
 	 int arr[100], i, n;
@@ -47,7 +41,6 @@ int main()
  printf("Enter n:\n");
  scanf("%d", &n);
  
- /* Reading array */
  for(i=0;i< n;i++)
  {
   printf("arr[%d]=",i);
