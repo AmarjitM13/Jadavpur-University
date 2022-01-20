@@ -3,10 +3,10 @@
 #include <string.h>
 using namespace std;
 
-class stringClass{
+class String{
     public:
     char str[20];
-    stringClass(){
+    String(){
         cout<<"Enter string: ";
         cin>>str;
         
@@ -17,15 +17,17 @@ class stringClass{
     
 };
 
-void joinString(stringClass obj1,stringClass obj2){
-    cout<<"\nThe concatenated string is: "<<strcat(obj1.str,obj2.str);
+void concatenateString(String string1,String string2){
+    cout<<"\nThe concatenated string is: "<<strcat(string1.str,string2.str);
     }
 
 int main(){
-    stringClass obj1,obj2;
+    String string1,string2;
     cout<<"---------------------"<<endl;
     cout<<"\n\nThe first string is: ";
-    obj1.display();
-    joinString(obj1,obj2);
+    string1.display();
+    cout<<"\n\nThe second string is: ";
+    string2.display();
+    concatenateString(string1,string2);
     return 0;
 }

@@ -11,8 +11,7 @@ class Circle
 			radius = r;
 			
 			double area = 3.14*radius*radius;
-			
-			cout << "Radius is: " << radius << endl;
+		
 			cout << "Area is: " << area;
 		}
 	
@@ -20,9 +19,11 @@ class Circle
 
 int main()
 {
+	double radius;
 	Circle circle;
-	
-	circle.compute_area(3.5);
+	cout<<"Enter radius: ";
+	cin>>radius;
+	circle.compute_area(radius);
 	
 	return 0;
 }
